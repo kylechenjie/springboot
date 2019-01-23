@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.pass0word1.demo</groupId>
 	<artifactId>springboot</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.2</version>
 	<name>springboot</name>
 	<description>Demo project for Spring Boot</description>
 
@@ -34,6 +34,25 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+
+	<repositories>
+		<repository>
+			<id>richinfo-release</id>
+		</repository>
+	</repositories>
+
+	<distributionManagement>
+		<repository>
+			<id>richinfo-release</id>
+			<name>richinfo-release</name>
+			<url>http://localhost:8081/repository/richinfo-release/</url>
+		</repository>
+		<snapshotRepository>
+			<id>richinfo-snapshot</id>
+			<name>richinfo-snapshot</name>
+			<url>http://localhost:8081/repository/richinfo-snapshot/</url>
+		</snapshotRepository>
+	</distributionManagement>
 
 	<build>
 		<plugins>
