@@ -35,12 +35,6 @@
 		</dependency>
 	</dependencies>
 
-	<repositories>
-		<repository>
-			<id>richinfo-release</id>
-		</repository>
-	</repositories>
-
 	<distributionManagement>
 		<repository>
 			<id>richinfo-release</id>
