@@ -17,6 +17,10 @@ pipeline {
     stage('Test') {
       agent {
         docker 'openjdk:8-jre'
+        docker {
+          image'maven:3-alpine'
+          args '-v /root/.m2:/root/.m2'
+        }
       }
       steps {
         echo 'Testing..'
