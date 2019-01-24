@@ -14,7 +14,9 @@ pipeline {
       }
     }
     stage('Test') {
-      docker 'openjdk:8-jre'
+      agent {
+        docker 'openjdk:8-jre'
+      }
       steps {
         echo 'Testing..'
 	      sh 'mvn test'
