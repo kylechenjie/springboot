@@ -4,8 +4,10 @@ pipeline {
   stages {
     stage('Build') {
       agent {
-        docker 'maven:3-alpine'
-        args '-v /root/.m2:/root/.m2'
+        docker {
+          image'maven:3-alpine'
+          args '-v /root/.m2:/root/.m2'
+        }
       }
       steps {
         echo 'Building..'
