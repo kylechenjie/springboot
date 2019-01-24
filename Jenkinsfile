@@ -18,11 +18,14 @@ pipeline {
       }
       steps {
         echo 'Testing..'
-	sh 'mvn test'
+	      sh 'mvn test'
         sh 'java -version'
       }
     }
     stage('Deploy') {
+      agent {
+        docker 'openjdk:8-jre'
+      }
       steps {
         echo 'Deploying....'
       }
