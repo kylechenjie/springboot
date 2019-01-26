@@ -14,9 +14,6 @@ pipeline {
       }
     }
     stage('Test') {
-      agent {
-        docker 'openjdk:8u191-jdk-alpine3.8'
-      }
       steps {
         echo 'Testing..'
 	      sh 'mvn test'
