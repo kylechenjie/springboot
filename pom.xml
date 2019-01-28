@@ -37,14 +37,14 @@
     
     <distributionManagement>
         <repository>
-            <id>richinfo-release</id>
-            <name>richinfo-release</name>
-            <url>http://192.168.100.250:8081/repository/richinfo-release/</url>
+            <id>richinfocd-releases</id>
+            <name>richinfocd-releases</name>
+            <url>http://192.168.100.250:8081/repository/richinfocd-releases/</url>
         </repository>
         <snapshotRepository>
-            <id>richinfo-snapshot</id>
-            <name>richinfo-snapshot</name>
-            <url>http://192.168.100.250:8081/repository/richinfo-snapshot/</url>
+            <id>richinfocd-snapshots</id>
+            <name>richinfocd-snapshots</name>
+            <url>http://192.168.100.250:8081/repository/richinfocd-snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
 
