@@ -34,6 +34,19 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+    
+    <distributionManagement>
+        <repository>
+            <id>richinfo-release</id>
+            <name>richinfo-release</name>
+            <url>http://192.168.100.250:8081/repository/richinfo-release/</url>
+        </repository>
+        <snapshotRepository>
+            <id>richinfo-snapshot</id>
+            <name>richinfo-snapshot</name>
+            <url>http://192.168.100.250:8081/repository/richinfo-snapshot/</url>
+        </snapshotRepository>
+    </distributionManagement>
 
 	<build>
 		<plugins>
