@@ -17,7 +17,12 @@ pipeline {
       steps {
         echo 'Testing..'
 	      sh 'mvn test'
-        sh 'java -version'
+      }
+    }
+    stage('Sonar') {
+      steps {
+        echo 'Analyzing..'
+	      sh 'mvn sonar:sonar'
       }
     }
     stage('Deploy') {
